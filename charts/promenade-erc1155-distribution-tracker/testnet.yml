@@ -1,0 +1,10 @@
+environmentVariables:
+  - name: "NETWORK_RPC"
+    value: "https://rpc.testnet.fantom.network"
+  - name: "NETWORK_CHAINID"
+    value: "4002"
+  - name: "DB_URL"
+    valueFrom:
+      configMapRef:
+        name: promenade-secrets
+        key: DB_URL
