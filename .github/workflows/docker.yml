@@ -2,7 +2,7 @@ name: Build docker image
 
 env:
   REGISTRY: registry.digitalocean.com
-  IMAGE_NAME: promenade/promenade-dist-tracker
+  IMAGE_NAME: promenade/promenade-erc1155-distribution-tracker
 
 on:
   push:
