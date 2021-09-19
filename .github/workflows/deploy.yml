@@ -20,4 +20,4 @@ jobs:
           GITHUB_SHA: ${{ github.sha }}
         with:
           args: |
-            helm upgrade --install --set=image.tag=$GITHUB_SHA $HELM_CHART ./charts/$HELM_CHART --kubeconfig /tmp/config
+            helm upgrade --install --set=image.tag=$GITHUB_SHA $HELM_CHART ./charts/$HELM_CHART
