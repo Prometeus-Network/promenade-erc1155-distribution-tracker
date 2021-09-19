@@ -80,3 +80,13 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+envFrom:
+  - secretRef:
+      name: promenade-erc1155-distribution-tracker-secret
+  - secretRef:
+      name: promenade-shared-secret
+  - configMapRef:
+      name: promenade-shared-env-config
+  - configMapRef:
+      name: promenade-erc1155-distribution-tracker-env-config
