@@ -1,5 +1,5 @@
-name: Deploy
-
+name: Deploy (testnet)
+ 
 env:
   REGISTRY: registry.digitalocean.com
   IMAGE_NAME: promenade/promenade-erc1155-distribution-tracker
@@ -10,7 +10,7 @@ on:
 
 jobs:
   deploy:
-    environment: mainnet
+    environment: testnet
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
